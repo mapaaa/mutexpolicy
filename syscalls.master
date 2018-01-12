@@ -1,0 +1,9 @@
+# syscalls.master function definitions
+
+331	STD		{ int sys_mtxopen(const char *name); }
+332	STD		{ int sys_mtxclose(int d); }
+333	STD		{ int sys_mtxlock(int d); }
+334	STD		{ int sys_mtxunlock(int d); }
+335	STD		{ int sys_mtxlist(int d, pid_t *pidlist, \
+			    size_t nlist); }
+336	STD		{ int sys_mtxgrant(int d, pid_t selected); }

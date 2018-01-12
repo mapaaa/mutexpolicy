@@ -1,0 +1,6 @@
+
+# man TSLEEP WAKEUP 9
+https://man.openbsd.org/tsleep.9
+
+# struct proc definition
+https://github.com/grange/openbsd-kernel/blob/d6906b9031885c7215fb421762a6b020f00feab6/sys/proc.h

@@ -1,0 +1,6 @@
+alias cdk='cd /sys/sys/arch/i386/compile/GENERIC.MP'
+alias fix='echo -e "\033c"'
+alias mmount='mount /dev/sd0i /mnt/pen'
+alias mumount='umount /mnt/pen'
+alias daemons='ps axo pid,ppid,tty,comm | awk "\$2==1"'
+alias nanog='nano /sys/sys/kern/sys_generic.c'
