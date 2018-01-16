@@ -1,2 +1,4 @@
-# mutexpolicy
-MutexPolicy is an userland daemon which manages how certain mutexes are accessed by certain processes. 
+
+# MutexPolicy
+
+MutexPolicy is an userland daemon which manages how mutexes are accessed by processes.

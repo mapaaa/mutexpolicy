@@ -29,8 +29,6 @@ int main(int argc, char **argv) {
         }
     }
     
-    printf("This is my application...\n");
-    
     if (!run_in_foreground) {
         printf("This is the last message you'll see, since I'm going to call daemon()\n");
         daemon(0, 0);

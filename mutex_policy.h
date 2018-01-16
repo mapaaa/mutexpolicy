@@ -17,11 +17,11 @@ int sys_mtxlock(int d);
 // Returns 0 on success, or sets errno and returns -1 in case of failure.
 int sys_mtxunlock(int d);
 
-// Returns n, where the first n spots in the list have been populated with threads awaiting specified mutex.
+// Returns n, where the first n spots in the list have been populated with threads awaiting specified mutexes.
 // If n is -1, an error was encountered.l
 // If n is nlist, there are probably more thread ids that could not be placed in the list. Try to repeat the call with a bigger list.
-// pidlist must be an array of length at least nlist.
-int sys_mtxlist(int d, pid_t *pidlist, size_t nlist);
+// array d and pidlist must be of length at least nlist.
+int sys_mtxlist(int *d, pid_t *pidlist, size_t nlist);
 
 // Grants lock of mutex to thread represented by selected.
 // Returns 0 on success and sets errno and returns -1 on failure.

@@ -19,7 +19,7 @@ struct sys_mtxunlock_args {
 };
 
 struct sys_mtxlist_args {
-	syscallarg(int) d;
+	syscallarg(int *) d;
 	syscallarg(pid_t *) pidlist;
 	syscallarg(size_t) nlist;
 };
